@@ -16,4 +16,4 @@ MonoBehaviour:
   _itemDescription: Best Sword Ever
   _itemSprite: {fileID: 21300000, guid: 030c76c927fa1054a803eeebef3fc839, type: 3}
   _itemCost: 10
-  _itemRarity: {r: 0, g: 0.6676614, b: 1, a: 0}
+  _itemRarity: {r: 0, g: 0.6676614, b: 1, a: 1}
