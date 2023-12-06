@@ -13,6 +13,11 @@ public class shop : MonoBehaviour
     [SerializeField] private Transform _shopContainer;
     [SerializeField] private GameObject _shopItemPrefab;
 
+    public TextMeshProUGUI displayItemName;
+    public TextMeshProUGUI displayItemDescription;
+    public TextMeshProUGUI displayItemCost;
+    public Image displayItemIMG;
+
     private void Start()
     {
         populateShop();
@@ -39,5 +44,9 @@ public class shop : MonoBehaviour
     private void OnButtonClick(shopItem item)
     {
         Debug.Log(item.name);
+        displayItemName.text = item._itemName;
+        displayItemDescription.text = item._itemDescription;
+        displayItemCost.text = item._itemCost.ToString();
+        displayItemIMG.sprite = item._itemSprite;
     }
 }
