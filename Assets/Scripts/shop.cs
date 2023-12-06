@@ -40,7 +40,6 @@ public class shop : MonoBehaviour
             itemObject.GetComponent<Image>().color = shopObject._itemRarity;
         }
     }
-
     private void OnButtonClick(shopItem item)
     {
         Debug.Log(item.name);
